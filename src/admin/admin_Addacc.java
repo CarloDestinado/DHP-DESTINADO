@@ -213,8 +213,6 @@ public class admin_Addacc extends javax.swing.JFrame {
         id = new javax.swing.JTextField();
         status = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        image = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         selectbut = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -227,13 +225,14 @@ public class admin_Addacc extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(450, 600));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.black, java.awt.Color.blue));
         jPanel1.setLayout(null);
 
@@ -291,6 +290,7 @@ public class admin_Addacc extends javax.swing.JFrame {
         jPanel2.add(pass);
         pass.setBounds(130, 210, 190, 30);
 
+        acctype.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         acctype.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please select", "DOCTOR", "DESK", "Admin", " " }));
         acctype.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(acctype);
@@ -307,6 +307,7 @@ public class admin_Addacc extends javax.swing.JFrame {
         jPanel2.add(id);
         id.setBounds(130, 10, 190, 30);
 
+        status.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         status.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "please select status", "Active", "Inactive" }));
         status.setToolTipText("");
         status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -319,14 +320,7 @@ public class admin_Addacc extends javax.swing.JFrame {
         jPanel2.add(jLabel11);
         jLabel11.setBounds(50, 290, 70, 30);
 
-        jPanel3.setLayout(null);
-        jPanel3.add(image);
-        image.setBounds(-2, 2, 190, 200);
-
-        jPanel2.add(jPanel3);
-        jPanel3.setBounds(390, 70, 190, 200);
-
-        jPanel4.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel4.setLayout(null);
 
@@ -343,9 +337,9 @@ public class admin_Addacc extends javax.swing.JFrame {
         selectbut.setBounds(0, 0, 100, 30);
 
         jPanel2.add(jPanel4);
-        jPanel4.setBounds(380, 290, 100, 30);
+        jPanel4.setBounds(220, 330, 100, 30);
 
-        jPanel5.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel5.setLayout(null);
 
@@ -359,12 +353,12 @@ public class admin_Addacc extends javax.swing.JFrame {
             }
         });
         jPanel5.add(removebut);
-        removebut.setBounds(0, 0, 90, 30);
+        removebut.setBounds(0, 0, 100, 30);
 
         jPanel2.add(jPanel5);
-        jPanel5.setBounds(500, 290, 90, 30);
+        jPanel5.setBounds(220, 370, 100, 30);
 
-        jPanel6.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel6.setLayout(null);
 
@@ -381,9 +375,9 @@ public class admin_Addacc extends javax.swing.JFrame {
         u_save.setBounds(0, 0, 100, 30);
 
         jPanel2.add(jPanel6);
-        jPanel6.setBounds(120, 350, 100, 30);
+        jPanel6.setBounds(110, 370, 100, 30);
 
-        jPanel7.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel7.setLayout(null);
 
@@ -400,29 +394,28 @@ public class admin_Addacc extends javax.swing.JFrame {
         jLabel9.setBounds(0, 0, 100, 30);
 
         jPanel2.add(jPanel7);
-        jPanel7.setBounds(240, 350, 100, 30);
+        jPanel7.setBounds(110, 330, 100, 30);
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(20, 70, 620, 410);
+        jPanel2.setBounds(20, 70, 400, 410);
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Create Account");
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(220, 30, 230, 30);
+        jLabel1.setBounds(110, 30, 230, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 666, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
         );
 
         pack();
@@ -595,7 +588,6 @@ public class admin_Addacc extends javax.swing.JFrame {
     public javax.swing.JTextField email;
     public javax.swing.JTextField fname;
     public javax.swing.JTextField id;
-    public javax.swing.JLabel image;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -608,7 +600,6 @@ public class admin_Addacc extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;

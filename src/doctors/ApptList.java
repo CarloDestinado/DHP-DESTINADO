@@ -120,8 +120,6 @@ private void customizeTable() {
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         apptListtable = new javax.swing.JTable();
-        EDITBUT = new javax.swing.JPanel();
-        Updatebut = new javax.swing.JLabel();
         REFRESHBUT = new javax.swing.JPanel();
         refresh = new javax.swing.JLabel();
         searchbar = new javax.swing.JTextField();
@@ -138,12 +136,12 @@ private void customizeTable() {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Appointment list");
+        jLabel1.setText("PATIENT LIST");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(140, 20, 260, 40);
 
@@ -173,32 +171,7 @@ private void customizeTable() {
         jPanel5.add(jScrollPane1);
         jScrollPane1.setBounds(10, 100, 560, 280);
 
-        EDITBUT.setBackground(new java.awt.Color(0, 255, 255));
-        EDITBUT.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 0, 0)));
-        EDITBUT.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                EDITBUTMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                EDITBUTMouseExited(evt);
-            }
-        });
-        EDITBUT.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Updatebut.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        Updatebut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Updatebut.setText("CONSULTATION");
-        Updatebut.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                UpdatebutMouseClicked(evt);
-            }
-        });
-        EDITBUT.add(Updatebut, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 30));
-
-        jPanel5.add(EDITBUT);
-        EDITBUT.setBounds(30, 50, 120, 30);
-
-        REFRESHBUT.setBackground(new java.awt.Color(0, 255, 255));
+        REFRESHBUT.setBackground(new java.awt.Color(255, 255, 255));
         REFRESHBUT.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 0, 0)));
         REFRESHBUT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -222,7 +195,7 @@ private void customizeTable() {
         refresh.setBounds(10, 0, 70, 30);
 
         jPanel5.add(REFRESHBUT);
-        REFRESHBUT.setBounds(170, 50, 90, 30);
+        REFRESHBUT.setBounds(30, 60, 90, 30);
 
         searchbar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         searchbar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -271,36 +244,6 @@ private void customizeTable() {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void UpdatebutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdatebutMouseClicked
-        int rowindex = apptListtable.getSelectedRow();
-        if(rowindex<0){
-            JOptionPane.showMessageDialog(null,"Please select an item!");
-
-        }else{
-            TableModel model = apptListtable.getModel();
-            updateform uForm = new updateform();
-            
-            uForm.apptID.setText(""+model.getValueAt(rowindex, 0));
-            uForm.apptstatus.setSelectedItem(""+model.getValueAt(rowindex,6));
-           
-       
-
-            uForm.setVisible(true);
-            this.dispose();
-          
-        }
-       
-        
-    }//GEN-LAST:event_UpdatebutMouseClicked
-
-    private void EDITBUTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EDITBUTMouseEntered
-        EDITBUT.setBackground(navcolor);
-    }//GEN-LAST:event_EDITBUTMouseEntered
-
-    private void EDITBUTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EDITBUTMouseExited
-        EDITBUT.setBackground(bodycolor);
-    }//GEN-LAST:event_EDITBUTMouseExited
 
     private void refreshMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refreshMouseClicked
          displaydata();
@@ -402,9 +345,7 @@ private void customizeTable() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel EDITBUT;
     private javax.swing.JPanel REFRESHBUT;
-    private javax.swing.JLabel Updatebut;
     private javax.swing.JTable apptListtable;
     public javax.swing.JLabel docID;
     private javax.swing.JLabel jLabel1;

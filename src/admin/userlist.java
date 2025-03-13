@@ -114,10 +114,10 @@ public class userlist extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("User Management");
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(0, 0, 0)));
@@ -128,7 +128,7 @@ public class userlist extends javax.swing.JFrame {
         jPanel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel5.setLayout(null);
 
-        EDITBUT.setBackground(new java.awt.Color(0, 255, 255));
+        EDITBUT.setBackground(new java.awt.Color(255, 255, 255));
         EDITBUT.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 0, 0)));
         EDITBUT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -153,7 +153,7 @@ public class userlist extends javax.swing.JFrame {
         jPanel5.add(EDITBUT);
         EDITBUT.setBounds(100, 40, 70, 30);
 
-        REFRESHBUT.setBackground(new java.awt.Color(0, 255, 255));
+        REFRESHBUT.setBackground(new java.awt.Color(255, 255, 255));
         REFRESHBUT.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 0, 0)));
         REFRESHBUT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -174,7 +174,7 @@ public class userlist extends javax.swing.JFrame {
             }
         });
         REFRESHBUT.add(refresh);
-        refresh.setBounds(10, 0, 55, 30);
+        refresh.setBounds(5, 0, 60, 30);
 
         jPanel5.add(REFRESHBUT);
         REFRESHBUT.setBounds(190, 40, 70, 30);
@@ -193,7 +193,7 @@ public class userlist extends javax.swing.JFrame {
         jPanel5.add(jLabel2);
         jLabel2.setBounds(530, 30, 80, 17);
 
-        ADDBUT.setBackground(new java.awt.Color(0, 255, 255));
+        ADDBUT.setBackground(new java.awt.Color(255, 255, 255));
         ADDBUT.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 0, 0)));
         ADDBUT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -300,21 +300,11 @@ public class userlist extends javax.swing.JFrame {
              AForm.pass.setText(""+rs.getString("u_password"));
              AForm.acctype.setSelectedItem(""+rs.getString("u_account"));
              AForm.status.setSelectedItem(""+rs.getString("u_status"));
-             AForm.image.setIcon(AForm.ResizeImage(rs.getString("u_images"), null,AForm.image));
              AForm.oldpath = rs.getString("u_images");
              AForm.path = rs.getString("u_images");
              AForm.destination = rs.getString("u_images");
             AForm.setVisible(true);
             
-            if(rs.getString("u_images").isEmpty()){
-              AForm.selectbut.setEnabled(true);
-               AForm.removebut.setEnabled(false);
-            }else{
-              AForm.selectbut.setEnabled(false);
-               AForm.removebut.setEnabled(true);
-            }
-            
-           
              AForm.action = "Update";
              AForm.u_save.setText("UPDATE");
             this.dispose();

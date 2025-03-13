@@ -98,7 +98,6 @@ public class desk_dashboard extends javax.swing.JFrame {
         LOGOUT = new javax.swing.JPanel();
         LAGOUTBUTTON = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         details = new javax.swing.JLabel();
         Name = new javax.swing.JLabel();
@@ -289,13 +288,6 @@ public class desk_dashboard extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jPanel4.setLayout(null);
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/clinic logo 290px.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
-        jPanel4.add(jLabel5);
-        jLabel5.setBounds(0, 0, 230, 120);
-
         NAV.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 120));
 
         jPanel1.add(NAV, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 530));
@@ -564,7 +556,6 @@ public class desk_dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

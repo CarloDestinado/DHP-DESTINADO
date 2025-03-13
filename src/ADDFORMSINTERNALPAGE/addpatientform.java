@@ -6,7 +6,7 @@
 package ADDFORMSINTERNALPAGE;
 
 import config.dbConnector;
-import internalpages.patients;
+import user.patients;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import user.*;

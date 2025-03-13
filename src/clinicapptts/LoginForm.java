@@ -100,23 +100,22 @@ public class LoginForm extends javax.swing.JFrame {
 
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         userName = new javax.swing.JTextField();
         userPass = new javax.swing.JPasswordField();
         SIGNIN = new javax.swing.JPanel();
         signinButton = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         creatAccount = new javax.swing.JLabel();
-        showpass = new javax.swing.JCheckBox();
-        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -126,24 +125,23 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/resizebg.png"))); // NOI18N
         jLabel10.setText("jLabel10");
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/medical-report_10812956 (1).png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel6.setBackground(new java.awt.Color(51, 153, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel4.setText("CLINIC APPOINTMENT ");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 190, 30));
-
-        jLabel5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jLabel5.setText("Tracker System");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, -1, -1));
+        jLabel4.setText("DIAGNOSIS HEALTH PROFILE");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 240, 30));
 
         userName.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Username:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
         userName.addActionListener(new java.awt.event.ActionListener() {
@@ -161,7 +159,7 @@ public class LoginForm extends javax.swing.JFrame {
         });
         jPanel2.add(userPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 210, 40));
 
-        SIGNIN.setBackground(new java.awt.Color(0, 255, 255));
+        SIGNIN.setBackground(new java.awt.Color(255, 255, 255));
         SIGNIN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         SIGNIN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -208,26 +206,14 @@ public class LoginForm extends javax.swing.JFrame {
 
         jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 120, 20));
 
-        showpass.setText("Show Password");
-        showpass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                showpassActionPerformed(evt);
-            }
-        });
-        jPanel2.add(showpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
-
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 310, 320));
 
-        jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel3.setText("LOGIN");
-        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, 80, 30));
-
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 60)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("CLINIC");
+        jLabel1.setText("DIAGNOSIS HEA");
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 270, 60));
+        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 350, 60));
 
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 490));
 
@@ -239,18 +225,22 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/clinicCare-removebg-preview (1).png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/log in bg.png"))); // NOI18N
         jLabel11.setText("jLabel11");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 320));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 110, 300, 320));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconsImage/icons8-health-report-100.png"))); // NOI18N
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 280, 320));
 
-        jLabel2.setFont(new java.awt.Font("Verdana", 1, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("CARE");
+        jLabel2.setText("HEALTH PROFILE");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 30, 230, 60));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 30, 400, 60));
 
         jPanel5.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 290, 490));
 
@@ -284,14 +274,6 @@ public class LoginForm extends javax.swing.JFrame {
     private void SIGNINMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SIGNINMouseExited
          SIGNIN.setBackground(navcolor);
     }//GEN-LAST:event_SIGNINMouseExited
-
-    private void showpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showpassActionPerformed
-            if(showpass.isSelected()){
-                userPass.setEchoChar((char)0);
-            }else{
-                userPass.setEchoChar('*');
-            }
-    }//GEN-LAST:event_showpassActionPerformed
 
     private void SIGNINMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SIGNINMouseClicked
      
@@ -399,9 +381,9 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -409,7 +391,6 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JCheckBox showpass;
     private javax.swing.JLabel signinButton;
     private javax.swing.JTextField userName;
     private javax.swing.JPasswordField userPass;

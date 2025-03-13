@@ -24,22 +24,7 @@ public class setting extends javax.swing.JFrame {
         initComponents();
     }
     
-   public  ImageIcon ResizeImage(String ImagePath, byte[] pic, JLabel label) {
-    ImageIcon MyImage = null;
-        if(ImagePath !=null){
-            MyImage = new ImageIcon(ImagePath);
-        }else{
-            MyImage = new ImageIcon(pic);
-        }
-        
-    int newHeight = getHeightFromWidth(ImagePath, label.getWidth());
-
-    Image img = MyImage.getImage();
-    Image newImg = img.getScaledInstance(label.getWidth(), newHeight, Image.SCALE_SMOOTH);
-    ImageIcon image = new ImageIcon(newImg);
-    return image;
-}
-        
+   
     
     
     
@@ -52,7 +37,7 @@ public class setting extends javax.swing.JFrame {
         Lname.setText(""+sess.getLname());
         email.setText(""+sess.getEmail());
         uname.setText(""+sess.getUname());
-        picture.setIcon(ResizeImage(sess.getImage(), null, picture));
+        
         
     
     }
@@ -93,7 +78,7 @@ public class setting extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));

@@ -90,7 +90,7 @@ public class dashboard extends javax.swing.JInternalFrame {
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("APPOINTMENTS:");
+        jLabel3.setText("DIAGNOSIS");
         jLabel3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
         jPanel3.add(jLabel3);
         jLabel3.setBounds(0, 0, 200, 40);
